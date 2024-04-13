@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 500px;
+            position: relative;
+        }
+
+        .div1 {
+            background-color: aqua;
+            width: 114px;
+            height: 103px;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+
+        .inner-container {
+            display: flex;
+            position: absolute;
+            top: 125px;
+            width: 100%;
+            /* vertical-align: top; */
+        }
+
+        .div2 {
+            background-color: violet;
+            width: 91px;
+            height: 94px;
+            margin-right: 10px;
+        }
+
+        .div3 {
+            background-color: blue;
+            flex-grow: 1;
+            height: 127px;
+            position: relative;
+            margin-right: 20px;
+        }
+
+        .div4{
+            position: absolute;
+            width: 69px;
+            height: 68px;
+            top: 225px;
+            border-radius: 50px;
+            white-space: pre-line;
+            text-align: center;
+            background-color: yellowgreen;
+        }
+
+        .div5{
+            background-color: black;
+            position: absolute;
+            width: 118px;
+            height: 173px;
+            top: 260px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class=container>
+        <div class="div1">
+            div1
+        </div>
+        <div class="inner-container">
+            <div class="div2">
+                div2
+            </div>
+            <div class="div3">
+                div3
+            </div>
+        </div>
+        <div class="div4">
+            div4
+        </div>
+        <div class="div5">
+            div5
+        </div>
+    </div>
+
+</body>
+
+</html>
