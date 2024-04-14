@@ -55,8 +55,15 @@ a{
     display: grid;
     grid-template-columns: 50px 1fr;
     margin-top: 12px;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
+.logo2a{
+    width: 152px;
+}
 .logo1a > div,
 .logo2a > div,
 .logo3a > div,
@@ -79,7 +86,8 @@ a{
 
 .logo2{
     height: 40px;
-    background: url(../Resources/Store.png);
+    background-color: #FFFFFF;
+    mask-image: url(../Resources/Store.png);
     background-repeat: no-repeat;
     background-size: 45px;
 }

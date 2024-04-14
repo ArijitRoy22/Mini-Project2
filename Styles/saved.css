@@ -54,8 +54,15 @@ a{
     display: grid;
     grid-template-columns: 50px 1fr;
     margin-top: 12px;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
+.logo4a{
+    width: 204px;
+}
 .logo1a > div,
 .logo2a > div,
 .logo3a > div,
@@ -103,7 +110,8 @@ a{
 
 .logo4{
     height: 40px;
-    background: url(../Resources/Saved.png);
+    background-color: #FFFFFF;
+    mask-image: url(../Resources/Saved.png);
     background-repeat: no-repeat;
     background-size: 45px;
 }

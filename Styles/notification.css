@@ -54,6 +54,14 @@ a{
     display: grid;
     grid-template-columns: 50px 1fr;
     margin-top: 12px;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.logo5a{
+    width: 214px;
 }
 
 .logo1a > div,
@@ -114,7 +122,8 @@ a{
 
 .logo5{
     height: 40px;
-    background: url(../Resources/Notification.png);
+    background-color: #FFFFFF;
+    mask-image: url(../Resources/Notification.png);
     background-repeat: no-repeat;
     background-size: 45px;
 }

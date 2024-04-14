@@ -30,10 +30,12 @@ body{
     border-bottom-color: rgb(193, 193, 193);
 }
 
+
 a{
     text-decoration: none;
     color: #C1C1C1;
 }
+    
 .middle-section{
     position: absolute;
     width: calc(100% - 78px);
@@ -53,8 +55,15 @@ a{
     display: grid;
     grid-template-columns: 50px 1fr;
     margin-top: 12px;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
+.logo1a{
+    width: 152px;
+}
 .logo1a > div,
 .logo2a > div,
 .logo3a > div,
@@ -66,9 +75,12 @@ a{
 }
 .logo1{
     height: 40px;
-    background: url(../Resources/Home.png);
+    /* background: url(../Resources/Home.png); */
+    background-color: #FFFFFF;
+    mask-image: url(../Resources/Home.png);
     background-repeat: no-repeat;
     background-size: 45px;
+    /* background-size: contain; */
 }
 
 .logo-title1{

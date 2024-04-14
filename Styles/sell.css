@@ -66,8 +66,15 @@ a{
     display: grid;
     grid-template-columns: 50px 1fr;
     margin-top: 12px;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
+.logo3a{
+    width: 180px;
+}
 .logo1a > div,
 .logo2a > div,
 .logo3a > div,
@@ -107,6 +114,11 @@ a{
     mask-image: url(../Resources/Sell.png);
     background-repeat: no-repeat;
     background-size: 45px;
+}
+
+.logo3.active {
+    background-color: white;
+    mask-image: url(../Resources/Sell.png);
 }
 
 .logo-title3{
