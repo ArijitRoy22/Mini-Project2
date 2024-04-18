@@ -1,169 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-color: #EBF9FF;
 }
 
-.nav{
-    width: 333px;
-    position: fixed;
-    background-color: #FFFFFF;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    border-right: 1px solid rgb(193, 193, 193);
-
+html{
+    font-size: 10px;
 }
-
-.title{
-    position: absolute;
-    width: calc(100% - 78px);
-    font-family: 'Iceberg';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 37px;
-    line-height: 45px;
-    top: 60px;
-    left: 30px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(193, 193, 193);
-}
-
 
 a{
     text-decoration: none;
     color: #C1C1C1;
 }
-    
-.middle-section{
-    position: absolute;
-    width: calc(100% - 78px);
-    height: 400px;
-    top: 140px;
-    left: 30px;
-    font-size: 20px;
-    color: #C1C1C1;
+
+@media only screen and (max-width: 500px) {
+    .title{
+        margin: 1rem 0px 1rem 0px; /* top right bottom left */
+        font-size: 3.7rem;
+        border-bottom: 1px solid rgb(193, 193, 193);
+    }
+
+    .profile-name{
+        font-size: 2.7em;
+        padding: 0px 0px 0.5rem 1em;
+    }
+
+    .bottom-nav {
+        position: fixed;
+        width: 100%;
+        height: 8vh;
+        bottom: 5px;
+        display: flex;
+    }
+    .section5{
+        display: none;
+    }
+    .section1, 
+    .section2,
+    .section3,
+    .section4,
+    .section6 {
+        width: 20vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo1 {
+        background: url(../Resources/Home.png);
+        background-repeat:  no-repeat;
+        background-size: contain; 
+        background-position: center;
+        width: 48%; 
+        height: 60%;
+    }
+
+    .logo2 {
+        background: url('../Resources/Store.png');
+        background-repeat:  no-repeat;
+        background-size: contain; 
+        background-position: center;
+        width: 60%; 
+        height: 60%;
+    }
+
+    .logo3 {
+        background-color: #02B7CC;
+        mask-image: url(../Resources/Sell.png);
+        background-repeat:  no-repeat;
+        background-size: contain; 
+        background-position: center;
+        width: 50%; 
+        height: 60%;
+    }
+
+    .logo4 {
+        background: url('../Resources/Saved.png');
+        background-repeat:  no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 60%; 
+        height: 60%;
+    }
+
+    .logo6 {
+        background: url('../Resources/Settings.png');
+        background-repeat:  no-repeat;
+        background-size: contain; 
+        background-position: center;
+        width: 60%; 
+        height: 60%; 
+    }
+
+    .profile{
+        display: none;
+    }
+
 }
 
-.logo1a,
-.logo2a,
-.logo3a,
-.logo4a,
-.logo5a,
-.logo6a{
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    margin-top: 12px;
-    border-radius: 5px;
-    padding-left: 4px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
+/*-------------------------------------------------------------------*/
+@media only screen and (min-width: 501px) {
 
-.logo2a{
-    width: 152px;
-}
-.logo1a > div,
-.logo2a > div,
-.logo3a > div,
-.logo4a > div,
-.logo5a > div,
-.logo6a > div{
-    display: flex;
-    align-items: center;
-}
-.logo1{
-    height: 40px;
-    background: url(../Resources/Home.png);
-    background-repeat: no-repeat;
-    background-size: 45px;
-}
+    .title{
+        margin: 6rem 0px 1rem 3rem; /* top right bottom left */
+        font-size: 3.7rem;
+        width: 5em;
+        /* background-color: yellowgreen; */
+        border-bottom: 1px solid rgb(193, 193, 193);
+    }
 
-.logo-title1{
-    height: 40px;
-}
+    .profile-name{
+        font-size: 2.7em;
+        position: absolute;
+        top: 2rem;
+        left: 28rem;
+        /* padding: 0px 0px 0.5rem 1em; */
+    }
 
-.logo2{
-    height: 40px;
-    background-color: #FFFFFF;
-    mask-image: url(../Resources/Store.png);
-    background-repeat: no-repeat;
-    background-size: 45px;
-}
+    .bottom-nav{
+        position: fixed;
+        width: 25.3438rem;
+        height: 100%;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: #FFFFFF;
+        border-right: 2px solid rgb(193, 193, 193);
+        z-index: -1;
+        color: #C1C1C1;
+    }
 
-.logo-title2{
-    height: 40px;
-}
+    .section1, 
+    .section2,
+    .section3,
+    .section4,
+    .section5,
+    .section6 {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        font-size: 2em;
+        margin-top: 1.2rem;
+        width: 80%;
+        border-radius: 0.5rem;
+        padding-left: 0.4rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
 
+    .section1 > div,
+    .section2 > div,
+    .section3 > div,
+    .section4 > div,
+    .section5 > div,
+    .section6 > div{
+        display: flex;
+        align-items: center;
+    }
 
-.logo3{
-    height: 40px;
-    background-color: #02B7CC;
-    /* -webkit-mask-image: url(Resources/Sell.png); */
-    mask-image: url(../Resources/Sell.png);
-    background-repeat: no-repeat;
-    background-size: 45px;
-}
+    .section1{
+        position: absolute;
+        top: 14rem;
+        left: 3rem;
+    }
 
-.logo-title3{
-    height: 40px;
-}
+    .section2{
+        position: absolute;
+        top: 22rem;
+        left: 3rem;
+        width: 152px;
+    }
+    .section3{
+        position: absolute;
+        top: 30rem;
+        left: 3rem;
+    }
+    .section4{
+        position: absolute;
+        top: 38rem;
+        left: 3rem;
+    }
+    .section5{
+        position: absolute;
+        top: 46rem;
+        left: 3rem;
+    }
 
-.logo4{
-    height: 40px;
-    background: url(../Resources/Saved.png);
-    background-repeat: no-repeat;
-    background-size: 45px;
-}
+    .section6{
+        position: absolute;
+        top: 54rem;
+        left: 3rem;
+    }
 
-.logo-title4{
-    height: 40px;
-}
+    .logo1 {
+        height: 40px;
+        width: 45px;
+        background: url(../Resources/Home.png);
+        background-repeat:  no-repeat;
+        background-size: 45px; 
+        background-position: center;
+        transform: translateY(7%);
 
-.logo5{
-    height: 40px;
-    background: url(../Resources/Notification.png);
-    background-repeat: no-repeat;
-    background-size: 45px;
-}
+    }
 
-.logo-title5{
-    height: 40px;
-}
+    .logo-title1,
+    .logo-title2,
+    .logo-title3,
+    .logo-title4,
+    .logo-title5,
+    .logo-title6{
+        height: 40px;
+        /* display: flex;
+        align-items: center; */
+    }
 
-.logo6{
-    height: 40px;
-    background: url(../Resources/Settings.png);
-    background-repeat: no-repeat;
-    background-size: 45px;
-}
+    .logo2{
+        height: 40px;
+        background-color: #FFFFFF;
+        mask-image: url(../Resources/Store.png);
+        background-repeat:  no-repeat;
+        background-size: 45px; 
+        background-position: center;
+        transform: translateY(2%);
+    }
 
-.logo-title6{
-    height: 40px;
-}
+    .logo3{
+        height: 40px;
+        background-color: #02B7CC;
+        mask-image: url(../Resources/Sell.png);
+        background-repeat:  no-repeat;
+        background-size: 45px; 
+        background-position: center;
+    }
 
-.bottom-section{
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    position: absolute;
-    height: 60px;
-    width: calc(100% - 30px);
-    bottom: 20px;
-    left: 30px;
-    gap: 20px;
-    border-top: 1px solid rgb(193, 193, 193);
-    padding-top: 20px;
-}
+    .logo4{
+        height: 40px;
+        background: url(../Resources/Saved.png);
+        background-repeat:  no-repeat;
+        background-size: 45px; 
+        background-position: center;
+        transform: translateY(12%);
+    }
 
-.profile{
-    background: url("../Resources/EDIT.jpg");
-    background-size: cover;
-    border-radius: 50px;
-    height: 50px;
-}
+    .logo5{
+        height: 40px;
+        background: url(../Resources/Notification.png);
+        background-repeat:  no-repeat;
+        background-size: 45px; 
+        background-position: center;
+        transform: translateY(12%);
+    }
 
-.profile-title{
-    height: 55px;
-    font-size: 23px;
+    .logo6{
+        height: 40px;
+        background: url(../Resources/Settings.png);
+        background-repeat:  no-repeat;
+        background-size: 45px; 
+        background-position: center;
+        transform: translateY(10%);
+    }
+
+    .profile{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        position: absolute;
+        font-size: 2.3rem;
+        width: 18.5rem;
+        bottom: 20px;
+        left: 30px;
+        gap: 20px;
+        border-top: 1px solid rgb(193, 193, 193) ;
+        padding-top: 20px;
+    }
+
+    .profile-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        height: 50px;
+    }
+
+    .profileName{
+        height: 55px;
+    }
+
 }
