@@ -4,6 +4,8 @@ body {
     height: 100vh;
     background: #EBF8FF;
     border-radius: 35px;
+    margin: 0;
+    padding: 0;
 }
 
 .back-ground {
