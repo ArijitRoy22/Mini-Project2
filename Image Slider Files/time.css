@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .time {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  

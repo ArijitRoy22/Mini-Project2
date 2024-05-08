@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+html{
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #C1C1C1;
+}
+
+.nav{
+    position: fixed;
+        width: 33.3rem;
+        height: 100%;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: #FFFFFF;
+        border-right: 2px solid rgb(193, 193, 193);
+        color: #C1C1C1;
+        z-index: 99;
+}
+
+.section2,
+.section4{
+    display: grid;
+        grid-template-columns: 50px 1fr;
+        font-size: 2em;
+        margin-top: 1.2rem;
+        width: 80%;
+        border-radius: 0.5rem;
+        padding-left: 0.4rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+}
+
+.section2 > div,
+.section4 > div{
+    display: flex;
+        align-items: center;
+}
+
+.section2{
+    position: absolute;
+    top: 22rem;
+    left: 3.9rem;
+    width: 152px;
+}
+
+.section4{
+    position: absolute;
+    top: 38rem;
+    left: 3.9rem;
+}
+
+.container{
+    position: relative;
+    left: 30%;
+    top: 5%;
+    display: flex;
+    /* Add this to align items horizontally */
+    flex-direction: row;
+    /* Add this to put some space between your containers */
+    gap: 20px;
+}
+
+.images,
+.rowimg {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
