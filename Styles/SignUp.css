@@ -8,6 +8,17 @@ body {
     padding: 0;
 }
 
+
+@font-face {
+    font-family: 'Iceberg';
+    src: url('../Fonts/Iceberg-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../Fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
 .back-ground {
     position: absolute;
     width: 100vw;
@@ -94,7 +105,8 @@ body {
     flex-direction: column;
 } */
 
-.email-label {
+.email-label,
+.user-label {
     margin-bottom: 5px;
 }
 
@@ -104,8 +116,14 @@ body {
 
 .email-icon{
     position: absolute;
-    top: 14%;
+    top: 47%;
     right: 0%;
+}
+
+.user-icon{
+    position: absolute;
+    top: 12%;
+    right: 0;
 }
 
 .password-label {
@@ -241,4 +259,11 @@ body {
     height: 173px;
     top: 255px;
     left: 175px;
+}
+
+
+#form-container{
+    position: absolute;
+    top: 92%;
+    left: 25%;
 }

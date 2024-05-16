@@ -13,38 +13,55 @@
     <div class="title">Trade It!
         <h2>Create Your Account</h2>
     </div>
-    <div class="sign-up-form">
-        <div class="email">
-            <div class="email-label">Email</div>
-            <div class="email-container">
-                <input type="email" placeholder="Enter your email">
-                <img src="Resources/Email.png" alt="Not Found." class="email-icon">
+    <form id="signin-form" class="signin-form">
+        <div class="sign-up-form">
+
+            
+            <div class="user">
+                <div class="user-lab">Username</div>
+                <div class="user-container">
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                    <img src="Resources/Email.png" alt="Not Found." class="user-icon">
+                </div>
+            </div>
+
+            <div class="email">
+                <div class="email-label">Email</div>
+                <div class="email-container">
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <img src="Resources/Email.png" alt="Not Found." class="email-icon">
+                </div>
+            </div>
+
+            <div class="password">
+                <div class="password-label">Password</div>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <img src="Resources/Lock.png" alt="Lock." class="lock-icon">
+                </div>
+            </div>
+            <div class="confirm-password">
+                <div class="confirm-password-label">Confirm Passowrd</div>
+                <div class="password-container">
+                    <input type="password" id="confirm-password" placeholder="Re-enter your password" required>
+                    <img src="Resources/Lock.png" alt="Lock." class="lock-icon">
+                </div>
             </div>
         </div>
-        <div class="password">
-            <div class="password-label">Password</div>
-            <div class="password-container">
-                <input type="password" placeholder="Enter your password">
-                <img src="Resources/Lock.png" alt="Lock." class="lock-icon">
+        <div class="left-container">
+            <div class="user-agreement">
+                <input type="checkbox" id="agreeCheckbox" required>
+                <label for="agreeCheckbox">By signing up you agree to our <span id="privacy">privacy policy</span> and
+                    users <span id="privacy">terms and conditions</span></label>
             </div>
+            <button type="submit" class="signup">SIGN UP</button>
+            <p id="problem">Having any problems?</p>
         </div>
-        <div class="confirm-password">
-            <div class="confirm-password-label">Confirm Passowrd</div>
-            <div class="password-container">
-                <input type="password" placeholder="Re-enter your password">
-                <img src="Resources/Lock.png" alt="Lock." class="lock-icon">
-            </div>
+
+        <div id="form-container">
+            <!-- Your form elements go here -->
         </div>
-    </div>
-    <div class="left-container">
-        <div class="user-agreement">
-            <input type="checkbox" id="checkbox">
-            <p>By signing up you agree to our <span id="privacy">privacy policy</span> and users <span
-                    id="privacy">terms and conditions</span></p>
-        </div>
-        <button class="signup">SIGN UP</button>
-        <p id="problem">Having any problems?</p>
-    </div>
+    </form>
     <div class="image-container">
         <div class="image1">
         </div>
@@ -61,4 +78,5 @@
     </div>
 </body>
 <script src="Gerenal.js"></script>
+<script src="Register.js"></script>
 </html>

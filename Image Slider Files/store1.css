@@ -72,11 +72,11 @@ a{
     gap: 20px;
 }
 
-.images,
+/* .images,
 .rowimg {
     max-width: 100px;
     max-height: 100px;
     object-fit: cover;
     object-position: center;
-}
+} */
 

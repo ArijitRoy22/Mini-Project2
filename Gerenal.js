@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
     updateButtonStyles();
 });
 
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
     let slideImages = document.querySelectorAll('#card-view');
     // Access the next and prev buttons
     let next = document.querySelector('.next');

@@ -13,26 +13,41 @@
     <div class="title">Trade It!
         <h2>Sign In</h2>
     </div>
-    <div class="sign-up-form">
-        <div class="email">
-            <div class="email-label">Email</div>
-            <div class="email-container">
-                <input type="email" placeholder="Enter your email">
-                <img src="Resources/Email.png" alt="Not Found." class="email-icon">
+    <form id="signin-form" class="signin-form">
+        <div class="sign-up-form">
+            <div class="email">
+                <div class="form-group">
+                    <div class="email-label">
+                        <for="email">Email</label>
+                    </div>
+                    <div class="email-container">
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <img src="Resources/Email.png" alt="Lock." class="lock-icon">
+                        <!-- <span class="error-message"></span> -->
+                    </div>
+                </div>
+            </div>
+            <div class="password">
+                <div class="form-group">
+                    <div class="password-label">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <img src="Resources/Lock.png" alt="Lock." class="lock-icon">
+                        <!-- <span class="error-message"></span> -->
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="password">
-            <div class="password-label">Password</div>
-            <div class="password-container">
-                <input type="password" placeholder="Enter your password">
-                <img src="Resources/Lock.png" alt="Lock." class="lock-icon">
+        <div class="left-container">
+            <button type="submit" class="signin">LOGIN</button>
+            <p id="problem">Forgot Password?</p>
+            <div id="form-container">
+                <!-- Your form elements go here -->
             </div>
         </div>
-    </div>
-    <div class="left-container">
-        <button class="signup">LOGIN</button>
-        <p id="problem">Forget Password?</p>
-    </div>
+    </form>
 
     <div class="image-container">
         <div class="image1">
@@ -50,5 +65,5 @@
     </div>
 </body>
 <script src="Gerenal.js"></script>
-
+<script src="login.js"></script>
 </html>

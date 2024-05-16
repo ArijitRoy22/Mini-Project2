@@ -672,6 +672,23 @@ a {
 
 @media only screen and (min-width: 821px) {
     
+    #logout{
+        background-color: #0094FF;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding-right: 6px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 4px;
+    }
+
+    .log-text{
+        font-size: 20px;
+    }
     
     .title {
         margin: 6rem 0px 1rem 3.9rem;

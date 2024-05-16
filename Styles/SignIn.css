@@ -6,6 +6,16 @@ body {
     border-radius: 35px;
 }
 
+@font-face {
+    font-family: 'Iceberg';
+    src: url('../Fonts/Iceberg-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../Fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
 .back-ground {
     position: absolute;
     width: 100vw;
@@ -109,7 +119,7 @@ body {
     right: 0;
 }
 
-.signup{
+.signin{
     position: absolute;
     top: 500px;
     left: 360px;
@@ -191,4 +201,10 @@ body {
     height: 173px;
     top: 255px;
     left: 95px;
+}
+
+#form-container{
+    position: absolute;
+    top: 80%;
+    left: 24%;
 }
