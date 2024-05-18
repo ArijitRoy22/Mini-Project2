@@ -515,4 +515,22 @@ a{
     .profileName{
         height: 55px;
     }
+
+    #logout {
+        width: 140px;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        border-radius: 15px;
+        background-color: tomato;
+        color: #FFFFFF;
+        border: 1px solid #5b5b5b;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adding shadow */
+        transform: translateX(-50%); /* To center the button horizontally */
+    }
+    
 }

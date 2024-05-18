@@ -89,6 +89,21 @@ const product = [
         title6: 'Highest Bid'
     },
 
+    {
+        id: 7,
+        image: 'Resources/rolex.webp',
+        title: 'Rolex Oyster Daytona',
+        title1: 'Information',
+        title2: 'Length',
+        title3: 'Weight',
+        title4: 'Age',
+        title5: 'Time Left',
+        title2_value: '40mm',
+        title3_value: '150gm',
+        title4_value: '57 Years',
+        title6: 'Highest Bid'
+    },
+
 
     // ... rest of your products ...
 ];
@@ -145,15 +160,20 @@ document.getElementById('card-grid').innerHTML = product.map((item, index) => {
                 ${title6}
             </div>
         </div>
-        <button id="saved-item" onclick='addtocart(${index})'>Saved Item</button>
+        <button class="saved-item" onclick='addtocart(${index})'>Saved Item</button>
     </div>`
     )
 }).join('')
 
 function addtocart(index) {
+    var loggedUser = localStorage.getItem('refresh_token');
+    if(loggedUser){
     cart.push(product[index]);
     localStorage.setItem('section4', JSON.stringify(cart));
-    document.getElementById("count").innerHTML = cart.length;
+    }else{
+        alert("You're not logged in. Please login first!");
+    }
+    // document.getElementById("count").innerHTML = cart.length;
 }
 
 // function delElement(index){

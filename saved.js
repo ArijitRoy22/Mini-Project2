@@ -1,14 +1,17 @@
 let cart = JSON.parse(localStorage.getItem('section4')) || [];
+
+let cart1 = cart.filter(item => item !== null);
+console.log(cart)
 // document.getElementById("count").innerHTML = cart.length;
 
 function displaycart(){
     // let total = 0;
-    if(cart.length == 0){
+    if(cart1.length == 0){
         document.getElementById('card-grid').innerHTML = "No item is saved";
         // document.getElementById("total").innerHTML = "$ "+0+".00";
     }
     else{
-        document.getElementById("card-grid").innerHTML = cart.map((item, index) => {
+        document.getElementById("card-grid").innerHTML = cart1.map((item, index) => {
             var {id, image, title, title1, title2, title2_value, title3, title3_value, title4, title4_value, title5, title6} = item;
             // total += price;
             return(
@@ -67,8 +70,8 @@ function displaycart(){
 }
 
 function delElement(index){
-    cart.splice(index, 1);
-    localStorage.setItem('section4', JSON.stringify(cart));
+    cart1.splice(index, 1);
+    localStorage.setItem('section4', JSON.stringify(cart1));
     // document.getElementById("count").innerHTML = cart.length;
     displaycart();
 }

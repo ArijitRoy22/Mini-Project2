@@ -641,10 +641,19 @@ a{
         margin-bottom: 0px;
     }
     
+    .pic-item,.item-info,.start-bid,.about,.Length,.Age,.Weight{
+        margin-top: 12px;
+        font-size: 15px;
+    }
+
     .item-input1{
         position: relative;
     }
     
+    input[type="file"]{
+        display: none;
+    }
+
     .input1{
         width: calc(100% - 22px);
         /* width: 100%; */
@@ -674,10 +683,6 @@ a{
         color: #0038FF;
     }
     
-    .pic-item,.item-info,.start-bid{
-        margin-top: 12px;
-        font-size: 15px;
-    }
     
     .button{
         position: absolute;

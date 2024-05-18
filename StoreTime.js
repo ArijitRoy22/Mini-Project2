@@ -16,22 +16,22 @@ const customStartTimes = [
   // Loop through each custom start time and create a countdown timer
   customStartTimes.forEach((startTime, index) => {
     createCountdownTimer(startTime, index + 1);
-    console.log(`${index + 1}`)
+    // console.log(`${index + 1}`)
   });
   
   // Function to create a countdown timer for a given custom start time and card ID
   // Function to create a countdown timer for a given custom start time and card ID
   function createCountdownTimer(startTime, cardId) {
-    console.log(`Creating countdown timer for card ${cardId} with start time ${new Date(startTime).toLocaleString()}`);
+    // console.log(`Creating countdown timer for card ${cardId} with start time ${new Date(startTime).toLocaleString()}`);
     const x = setInterval(function() {
         const now = new Date().getTime(); // Get current time
         const distance = startTime - now;
         
-        console.log(`Distance for card ${cardId}: ${distance} milliseconds`);
+        // console.log(`Distance for card ${cardId}: ${distance} milliseconds`);
         
         if (distance <= 0) { // Check if time has already passed or is exactly zero
           clearInterval(x);
-          console.log(`Countdown timer for card ${cardId} has expired`);
+          // console.log(`Countdown timer for card ${cardId} has expired`);
           const timerElement = document.getElementById("timer" + cardId);
           if (timerElement) {
             timerElement.innerHTML = "EXPIRED";

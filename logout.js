@@ -38,7 +38,12 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.removeItem('refresh_token');
         localStorage.removeItem('userData');
         // Redirect to login page
-        window.location.replace('SignIn.html');
+        if(isLoggedIn) {
+            alert("Logout Successful.")
+        }
+        else{
+            alert("You've already logged out!");
+        }
     }
 
     // Event listener for upload button

@@ -10,6 +10,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var login = document.getElementById('login');
+
+    if (login) {
+        login.addEventListener('click', function () {
+            window.location.replace('SignIn.html');
+            // window.open('SignIn.html', '_blank');
+        });
+    }
+});
+//change
+
+
 // Attach another event listener for DOMContentLoaded
 document.addEventListener('DOMContentLoaded', function () {
     var SignUpLink = document.querySelector('.SignUp-link');

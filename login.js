@@ -46,6 +46,8 @@ async function login(event) {
             throw new Error('Email not found. Please register first.');
         }
 
+        localStorage.setItem('user_id',emailFound.id)
+
         // If email exists, proceed with login attempt (rest of the code remains the same)
         // ...
 

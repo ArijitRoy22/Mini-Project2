@@ -117,7 +117,7 @@ body{
     margin-top: 4px;
 }
 
-#saved-item{
+.saved-item{
     background-color: #00B7CC;
     top: 6px;
     left: 220px;

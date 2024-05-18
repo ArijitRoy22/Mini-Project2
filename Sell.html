@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Styles/sell.css">
 </head>
+
 <body>
     <div class="back">
-        <img class="back-icon" src="Resources/Back.png" alt="Not Found!"/>
+        <img class="back-icon" src="Resources/Back.png" alt="Not Found!" />
     </div>
     <div class="title1">
         Trade It!
@@ -71,7 +73,7 @@
         </a>
 
         <div class="profile">
-            <img class="profile-img" src="Resources/EDIT.jpg" alt="Not Found!">
+            <img class="profile-img" src="Resources/MaleUser.png" alt="Not Found!">
             <div class="profileName">
                 Hrishi
             </div>
@@ -80,47 +82,121 @@
     </div>
     <div class="add-items">
         Add Items
-        <div class="name-item">
-            Name of the Item
-            <div class="item-input1">
-                <input class="input1" type="text" placeholder="Enter the name">
-                <img src="Resources/Pencil.png" alt="Not Found!" class="name-icon"/>
+    
+        <form id="sell-form" enctype="multipart/form-data">
+            <div class="name-item">
+                Name of the Item
+                <div class="item-input1">
+                    <input id="name" name="name" class="input1" type="text" placeholder="Enter the name" required>
+                    <img src="Resources/Pencil.png" alt="Not Found!" class="name-icon" />
+                </div>
             </div>
-        </div>
-        
-        <div class="pic-item">
-            Picture of Item
-            <div class="item-input1">
-                <input class="input1" type="text" placeholder="Add .jpg/.png/.pdf files">
-                <img src="Resources/Plus Math.png" alt="Not Found!" class="pic-icon"/>
-                <p class="upload-option">Add file</p>
+    
+            <div class="about">
+                About
+                <div class="item-input1">
+                    <input id="about" name="about" class="input1" type="text" placeholder="Enter the about" required>
+                    <img src="Resources/Pencil.png" alt="Not Found!" class="name-icon" />
+                </div>
             </div>
-        </div>
-
-        <div class="item-info">
-            Item Information
-            <div class="item-input1">
-                <input class="input1" type="text" placeholder="Enter item information">
-                <img src="Resources/Pencil.png" alt="Not Found!" class="info-icon"/>
+    
+            <div class="start-bid">
+                Starting Bid
+                <div class="item-input1">
+                    <input id="startBid" name="start_bid" class="input1" type="text" placeholder="Enter the starting bid amount in INR" required>
+                    <img src="Resources/Pencil.png" alt="Not Found!" class="bid-icon" />
+                </div>
             </div>
-        </div>
-
-        <div class="start-bid">
-            Starting Bid
-            <div class="item-input1">
-                <input class="input1" type="text" placeholder="Enter the starting bid amount in INR">
-                <img src="Resources/Pencil.png" alt="Not Found!" class="bid-icon"/>
+    
+            <div class="Length">
+                Length
+                <div class="item-input1">
+                    <input id="length" name="length" class="input1" type="text" placeholder="Enter the Length of the item" required>
+                    <img src="Resources/Pencil.png" alt="Not Found!" class="bid-icon" />
+                </div>
             </div>
-        </div>
-
-        <div class="button">
-            <button class="confirm-button">Confirm</button>
-            <p class="query">
-                Having any problems?
-            </p>
-        </div>
+    
+            <div class="Age">
+                Age
+                <div class="item-input1">
+                    <input id="age" name="Age" class="input1" type="text" placeholder="Enter the age of the item" required>
+                    <img src="Resources/Pencil.png" alt="Not Found!" class="bid-icon" />
+                </div>
+            </div>
+    
+            <div class="Weight">
+                Weight
+                <div class="item-input1">
+                    <input id="weight" name="weight" class="input1" type="text" placeholder="Enter the weight of the item" required>
+                    <img src="Resources/Pencil.png" alt="Not Found!" class="bid-icon" />
+                </div>
+            </div>
+    
+            <div class="pic-item">
+                Picture of Item
+                <label for="input1">
+                    <div class="item-input1">
+                        <input id="pic1" class="input1" type="text" placeholder="Add .jpg/.png/.pdf files" readonly required>
+                        <img src="Resources/Plus Math.png" alt="Not Found!" class="pic-icon" />
+                        <p class="upload-option">Add file</p>
+                    </div>
+                </label>
+                <input id="input1" name="image1" class="file-input" type="file" onchange="displayFileName(this, 'pic1')">
+            </div>
+    
+            <div class="pic-item">
+                Picture of Item
+                <label for="input2">
+                    <div class="item-input1">
+                        <input id="pic2" class="input1" type="text" placeholder="Add .jpg/.png/.pdf files" readonly>
+                        <img src="Resources/Plus Math.png" alt="Not Found!" class="pic-icon" />
+                        <p class="upload-option">Add file</p>
+                    </div>
+                </label>
+                <input id="input2" name="image2" class="file-input" type="file" onchange="displayFileName(this, 'pic2')">
+            </div>
+    
+            <div class="pic-item">
+                Picture of Item
+                <label for="input3">
+                    <div class="item-input1">
+                        <input id="pic3" class="input1" type="text" placeholder="Add .jpg/.png/.pdf files" readonly>
+                        <img src="Resources/Plus Math.png" alt="Not Found!" class="pic-icon" />
+                        <p class="upload-option">Add file</p>
+                    </div>
+                </label>
+                <input id="input3" name="image3" class="file-input" type="file" onchange="displayFileName(this, 'pic3')">
+            </div>
+    
+            <div class="pic-item">
+                Picture of Item
+                <label for="input4">
+                    <div class="item-input1">
+                        <input id="pic4" class="input1" type="text" placeholder="Add .jpg/.png/.pdf files" readonly>
+                        <img src="Resources/Plus Math.png" alt="Not Found!" class="pic-icon" />
+                        <p class="upload-option">Add file</p>
+                    </div>
+                </label>
+                <input id="input4" name="image4" class="file-input" type="file" onchange="displayFileName(this, 'pic4')">
+            </div>
+    
+            <div class="button">
+                <button id="confirm" type="submit" class="confirm-button">Confirm</button>
+                <p class="query">
+                    Having any problems?
+                </p>
+            </div>
+    
+            <div id="form-container">
+                <!-- Your form elements go here -->
+            </div>
+    
+        </form>
     </div>
+    
 
 </body>
 <script src="Gerenal.js"></script>
+<script src="Sell.js"></script>
+
 </html>
