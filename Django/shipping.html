@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/basic.css">
+    <link rel="stylesheet" href="Styles/info.css">
+</head>
+
+<body>
+    <div class="title1">
+        Trade It!
+    </div>
+    <!--div class="profile-name">
+        Welcome Hrishi
+    </div-->
+
+    <div class="nav-bar">
+
+        <div class="title">
+            Trade It!
+        </div>
+        <a href="index.html">
+        <div class="section1">
+            <img class="home-img" src="Resources/Home.png" alt="Not Found!">
+            <div class="logo-title1">
+                HOME
+            </div>
+        </div>
+        </a>
+        <div class="section2">
+            <img class="store-img" src="Resources/Store.png" alt="Not Found!">
+            <div class="logo-title2">
+                STORE
+            </div>
+        </div>
+
+        <a href="Sell.html">
+            <div class="section3">
+                <img src="Resources/Sell.png" alt="Not Found!">
+                <div class="logo-title3">
+                    SELL ZONE
+                </div>
+            </div>
+        </a>
+        <a href="saved.html">
+            <div class="section4">
+                <img src="Resources/Saved.png" alt="Not Found!">
+                <div class="logo-title4">
+                    SAVEDITEMS
+                </div>
+            </div>
+        </a>
+        
+        <a href="setting.html">
+            <div class="section5">
+                <img src="Resources/Settings.png" alt="Not Found!">
+                <div class="logo-title6">
+                    SETTINGS
+                </div>
+            </div>
+        </a>
+
+        <div class="profile">
+            <img class="profile-img" src="Resources/MaleUser.png" alt="Not Found!">
+            <div class="profileName">
+                Hrishi
+            </div>
+        </div>
+
+    </div>
+
+    <div class="enter-info">
+        <div style="color: #03BDC9">
+            1. Shipping Info
+        </div>
+    
+        <form id="sell-form" enctype="multipart/form-data">
+            <div class="name">
+                Name
+                <div class="item-input1">
+                    <input id="name" name="name" class="input1" type="text" placeholder="Enter the name" required>
+                    <img src="Resources/Pencil.png" alt="Not Found!" class="name-icon" />
+                </div>
+            </div>
+    
+            <div class="address">
+                Address
+                <div class="item-input1">
+                    <input id="address" name="address" class="input1" type="text" placeholder="Enter the address" required>
+                    <img src="Resources/Pencil.png" alt="Not Found!" class="name-icon" />
+                </div>
+            </div>
+    
+            <div class="house-no">
+                House No.
+                <div class="item-input1">
+                    <input id="house-no" name="house-no" class="input1" type="text" placeholder="Enter the house no." required>
+                    <img src="Resources/Pencil.png" alt="Not Found!" class="bid-icon" />
+                </div>
+            </div>
+    
+            <div class="pin-code">
+                Pin Code
+                <div class="item-input1">
+                    <input id="pin-code" name="pin-code" class="input1" type="text" placeholder="Enter the pin code" required>
+                    <img src="Resources/Pencil.png" alt="Not Found!" class="bid-icon" />
+                </div>
+            </div>
+    
+            <div class="city">
+                City
+                <div class="item-input1">
+                    <input id="city" name="city" class="input1" type="text" placeholder="Enter the city" required>
+                    <img src="Resources/Pencil.png" alt="Not Found!" class="bid-icon" />
+                </div>
+            </div>
+    
+            <div class="state">
+                State
+                <div class="item-input1">
+                    <input id="state" name="state" class="input1" type="text" placeholder="Enter the state" required>
+                    <img src="Resources/Pencil.png" alt="Not Found!" class="bid-icon" />
+                </div>
+            </div>
+
+            <div class="button">
+                <button id="next" type="submit" class="next-button">Submit</button>
+            </div>
+    
+            <div id="form-container">
+                <!-- Your form elements go here -->
+            </div>
+    
+        </form>
+    </div>
+
+    <div class="pay">
+        2. Payment Method
+    </div>
+
+    <div class="confirm">
+        3. Confirmation
+    </div>
+
+</body>
+<script src="Gerenal.js"></script>
+<script src="order.js"></script>
+</html>

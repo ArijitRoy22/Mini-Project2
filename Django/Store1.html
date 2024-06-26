@@ -57,16 +57,9 @@
                 </div>
             </div>
         </a>
-        <a href="notification.html">
-            <div class="section5">
-                <img src="Resources/Notification.png" alt="Not Found!">
-                <div class="logo-title5">
-                    NOTIFICATIONS
-                </div>
-            </div>
-        </a>
+
         <a href="setting.html">
-            <div class="section6">
+            <div class="section5">
                 <img src="Resources/Settings.png" alt="Not Found!">
                 <div class="logo-title6">
                     SETTINGS
@@ -76,8 +69,8 @@
 
         <div class="profile">
             <img class="profile-img" src="Resources/MaleUser.png" alt="Not Found!">
-            <div class="profileName">
-                Hrishi
+            <div class="profileName" id="profileName">
+                User
             </div>
         </div>
 
@@ -168,6 +161,17 @@
 
         
     </script> -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const username = localStorage.getItem('user_name');
+            if (username) {
+                document.getElementById('username-display').textContent = username;
+                document.getElementById('profileName').textContent = username;
+            }
+        });
+    </script>
+
 </body>
 <script src="Gerenal.js"></script>
 <!-- <script src="Store.js"></script> -->

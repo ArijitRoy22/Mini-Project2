@@ -1,0 +1,207 @@
+.enter-info{
+    position: absolute;
+    top: 60px;
+    left: 360px;
+    width: 524px;
+    height: 600px;
+    font-size: 35px;
+}
+
+.check{
+    position: absolute;
+    top: -276px;
+    left: -235px;
+    width: 524px;
+    height: 600px;
+}
+
+.check2{
+    position: absolute;
+    top: -276px;
+    left: -185px;
+    width: 524px;
+    height: 600px;
+}
+
+.check3{
+    position: absolute;
+    top: -217px;
+    left: -498px;
+    width: 524px;
+    height: 600px;
+}
+
+.choose{
+    position: absolute;
+    top: 130px;
+    left: 360px;
+    width: 524px;
+    height: 600px;
+    font-size: 35px;
+}
+
+.display{
+    position: absolute;
+    top: 200px;
+    left: 360px;
+    width: 524px;
+    height: 600px;
+    font-size: 35px;
+}
+
+.name{
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
+.card, .net-bank, .other, .EMI, .COD{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.pic-item,.item-info,.house-no,.address,.pin-code,.city,.state{
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+.order{
+    font-size: 25px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+}
+
+.conf, .shipping-to, .delivery{
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+.item-input1{
+    position: relative;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.input1{
+    width: calc(100% - 22px);
+    /* width: 100%; */
+    margin-top: 4px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.name-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    height: auto;
+    width: 25px;
+}
+
+.pic-icon,
+.info-icon,
+.bid-icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    height: auto;
+    width: 20px;
+}
+
+.upload-option{
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0038FF;
+}
+
+
+.button{
+    position: absolute;
+    left: 205px;
+    margin-top: 0px;
+}
+
+.button2{
+    position: absolute;
+    left: 150px;
+    margin-top: 0px;
+}
+
+.button3{
+    position: absolute;
+    left: 185px;
+    margin-top: 0px;
+}
+
+.next-button {
+    padding: 8px 40px 8px 40px;
+    border-radius: 16px;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #0038FF;
+    border: 0.5px solid #D9D9D9;
+    box-shadow: 3px 4px 2px rgba(217, 217, 217, 1);
+    background-color: white;
+}
+
+.ship{
+    position: absolute;
+    top: 60px;
+    left: 360px;
+    width: 524px;
+    height: 600px;
+    font-size: 35px;
+}
+
+.pay{
+    position: absolute;
+    top: 630px;
+    left: 360px;
+    width: 524px;
+    height: 600px;
+    font-size: 35px;
+}
+
+.pay2{
+    position: absolute;
+    top: 130px;
+    left: 360px;
+    width: 524px;
+    height: 600px;
+    font-size: 35px;
+}
+
+.confirm{
+    position: absolute;
+    top: 700px;
+    left: 360px;
+    width: 524px;
+    height: 600px;
+    font-size: 35px;
+}
+
+.confirm2{
+    position: absolute;
+    top: 525px;
+    left: 360px;
+    width: 524px;
+    height: 600px;
+    font-size: 35px;
+}
+
+.msg-center{
+    margin-top: -18px;
+    margin-left: 175px;
+    font-size: 15px;
+}

@@ -123,24 +123,27 @@ body{
     margin-top: 3px;
 }
 
-.saved-item{
-    background-color: #00B7CC;
-    top: 6px;
-    left: 220px;
-    position: absolute;
-    border: 1px solid #0094FF;
-    border-radius: 5px;
-    z-index: 99;
-}
 
-/* #saved-item1{
+
+#saved-item1{
     background-color: #00B7CC;
-    top: 6px;
-    left: 240px;
-    position: absolute;
-    border: 1px solid #0094FF;
-    border-radius: 5px;
-} */
+    /* top: 411.5px;
+    left: 140px; */
+    position: relative;
+    left: 40%;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    /*margin-left: 80px; */
+    border: none;
+    border-radius: 15px;
+    z-index: 99;
+    border-color: black;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    box-shadow: 0px 2px 4px rgba(0, 242, 255, 0.795);
+}
 
 /* Add this CSS to Store.css */
 

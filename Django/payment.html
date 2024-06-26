@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/basic.css">
+    <link rel="stylesheet" href="Styles/info.css">
+</head>
+
+<body>
+    <div class="title1">
+        Trade It!
+    </div>
+    <!--div class="profile-name">
+        Welcome Hrishi
+    </div-->
+
+    <div class="nav-bar">
+
+        <div class="title">
+            Trade It!
+        </div>
+        <a href="index.html">
+        <div class="section1">
+            <img class="home-img" src="Resources/Home.png" alt="Not Found!">
+            <div class="logo-title1">
+                HOME
+            </div>
+        </div>
+        </a>
+        <div class="section2">
+            <img class="store-img" src="Resources/Store.png" alt="Not Found!">
+            <div class="logo-title2">
+                STORE
+            </div>
+        </div>
+
+        <a href="Sell.html">
+            <div class="section3">
+                <img src="Resources/Sell.png" alt="Not Found!">
+                <div class="logo-title3">
+                    SELL ZONE
+                </div>
+            </div>
+        </a>
+        <a href="saved.html">
+            <div class="section4">
+                <img src="Resources/Saved.png" alt="Not Found!">
+                <div class="logo-title4">
+                    SAVEDITEMS
+                </div>
+            </div>
+        </a>
+
+        <a href="setting.html">
+            <div class="section5">
+                <img src="Resources/Settings.png" alt="Not Found!">
+                <div class="logo-title6">
+                    SETTINGS
+                </div>
+            </div>
+        </a>
+
+        <div class="profile">
+            <img class="profile-img" src="Resources/MaleUser.png" alt="Not Found!">
+            <div class="profileName">
+                Hrishi
+            </div>
+        </div>
+
+    </div>
+
+    <div class="ship">
+        1. Shipping Info
+
+        <div class="check">
+            <img src="Resources/Tick.png" alt="Not Found!" class="name-icon" />
+        </div>
+    </div>
+
+    <div class="choose">
+        <div style="color: #03BDC9">
+            2. Payment Method
+        </div>
+
+        <form id="sell-form" enctype="multipart/form-data">
+            <div class="radio-group">
+                <div class="card">
+                    <input type="radio" name="Payment Method" style="margin-right: 25px">Credit or Debit Card
+                </div>
+        
+                <div class="net-bank">
+                    <input type="radio" name="Payment Method" style="margin-right: 25px">Net Banking
+                </div>
+        
+                <div class="other">
+                    <input type="radio" name="Payment Method" style="margin-right: 25px">Other UPI apps
+                </div>
+        
+                <div class="EMI">
+                    <input type="radio" name="Payment Method" style="margin-right: 25px">EMI
+                </div>
+        
+                <div class="COD">
+                    <input type="radio" name="Payment Method" style="margin-right: 25px">Cash On Delivery (COD)
+                </div>
+            </div>
+            
+            <div class="button2">
+                <button id="next1" type="submit" class="next-button" style="margin-right: 25px">Use this payment method</button>
+            </div>
+    
+            <div id="form-container">
+                <!-- Your form elements go here -->
+            </div>
+    
+        </form>
+    </div>
+
+    <div class="confirm2">
+        3. Confirmation
+    </div>
+
+</body>
+<script src="Gerenal.js"></script>
+<script src="order.js"></script>
+</html>

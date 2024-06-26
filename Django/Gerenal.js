@@ -48,8 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var storeButton = document.querySelector('.section2');
     var sellButton = document.querySelector('.section3');
     var saveButton = document.querySelector('.section4');
-    var notButton = document.querySelector('.section5');
-    var setButton = document.querySelector('.section6');
+    var setButton = document.querySelector('.section5');
     // var sellImage = document.querySelector('.logo3');
 
     // Function to update button styles based on the current page
@@ -59,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
         storeButton.style.backgroundColor = '';
         sellButton.style.backgroundColor = '';
         saveButton.style.backgroundColor = '';
-        notButton.style.backgroundColor = '';
         setButton.style.backgroundColor = '';
 
         // Check the current page and update button styles accordingly
@@ -68,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
             homeButton.style.color = '#FFFFFF';
             homeButton.querySelector(".home-img").src = "Resources/Home-White.png"
         }
-        else if (currentPage === 'Store.html' || currentPage === 'Store1.html') {
+        else if (currentPage === 'Store.html' || currentPage === 'Store1.html' || currentPage === 'shipping.html' || currentPage === 'payment.html' || currentPage === 'display.html') {
             storeButton.style.backgroundColor = '#0094FF';
             storeButton.style.color = '#FFFFFF';
             storeButton.querySelector(".store-img").src = "Resources/Store-White.png"
@@ -82,11 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
             saveButton.style.backgroundColor = '#0094FF';
             saveButton.style.color = '#FFFFFF';
             saveButton.querySelector(".saved-img").src = "Resources/Saved-White.png"
-        }
-        else if (currentPage === 'notification.html') {
-            notButton.style.backgroundColor = '#0094FF';
-            notButton.style.color = '#FFFFFF';
-            notButton.querySelector(".not-img").src = "Resources/notification-white.png"
         }
         else if (currentPage === 'setting.html') {
             setButton.style.backgroundColor = '#0094FF';

@@ -698,7 +698,7 @@ function updateProductUI(products) {
                         <p><span style="font-size: 20px;">₹</span>${title7}</p>
                     </div>
                 </div>
-                <button class="saved-item" onclick="addtocart(${index})">Saved Item</button>
+                <button class="saved-item" onclick="addtocart(${index})">Save Item</button>
                 <button class="auction-item" onclick="goToAuctionPage(${index})">Auction</button>
             </div>`
         );
