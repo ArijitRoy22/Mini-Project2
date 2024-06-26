@@ -12,7 +12,7 @@ body{
 .container{
     position: relative;
     left: 30%;
-    top: 3%;
+    top: 10%;
     display: flex;
     /* Add this to align items horizontally */
     flex-direction: row;
@@ -125,8 +125,8 @@ body{
 
 .saved-item{
     background-color: #00B7CC;
-    top: 414px;
-    left: 140px;
+    top: 6px;
+    left: 220px;
     position: absolute;
     border: 1px solid #0094FF;
     border-radius: 5px;
@@ -199,12 +199,4 @@ body{
         width: 80%;
         font-size: 16px;
     }
-}
-
-
-.auction-item{
-    background-color: tomato;
-    margin-bottom: 3px;
-    margin-top: 3px;
-    margin-left: 60px;
 }

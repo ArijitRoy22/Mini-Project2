@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Company,Employee,items
+from .models import Company,Employee,items,Bid
 # Register your models here.
 class CompanyAdmin(admin.ModelAdmin):
     list_display=('name','location','type')
@@ -16,4 +16,5 @@ class itemDisplay(admin.ModelAdmin):
 admin.site.register(Company,CompanyAdmin)
 admin.site.register(Employee,EmployeeAdmin)
 # admin.site.register(ImageModel)
+admin.site.register(Bid)
 admin.site.register(items,itemDisplay)
