@@ -17,7 +17,10 @@
         Trade It!
     </div>
     
-
+    <div class="profile-name">
+        Welcome <span id="username-display">User</span>
+    </div>
+    
     <div class="nav-bar">
 
         <div class="title">
@@ -73,8 +76,8 @@
 
         <div class="profile">
             <img class="profile-img" src="Resources/MaleUser.png" alt="Not Found!">
-            <div class="profileName" id="dynamic-username">
-                User<!-- Username will be dynamically inserted here -->
+            <div class="profileName">
+                Hrishi
             </div>
         </div>
 
@@ -165,19 +168,8 @@
 
         
     </script> -->
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const username = localStorage.getItem('username');
-            if (username) {
-                document.getElementById('username-display').textContent = username;
-                document.getElementById('dynamic-username').textContent = username;
-            }
-        });
-    </script>
 </body>
 <script src="Gerenal.js"></script>
-<script src="Store.js"></script>
+<!-- <script src="Store.js"></script> -->
 <script src="auction.js"></script>
-<script src="StoreTime.js"></script>
 </html>

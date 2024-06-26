@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+</head>
+
+<body>
+    <div id="userList">
+        <!-- User information will be displayed here -->
+    </div>
+
+    <script>
+        // JavaScript code to fetch and display user information
+        fetch(`http://127.0.0.1:8000/api/v1/register/`)
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .then(userData => {
+                // Get the container element where user information will be displayed
+                const userListContainer = document.getElementById('userList');
+
+                // Iterate over the array of user objects
+                userData.forEach(user => {
+                    // Create a new <div> element for each user
+                    const userDiv = document.createElement('div');
+                    // Set the innerHTML of the <div> to display username and id
+                    userDiv.innerHTML = `Username: ${user.username}, ID: ${user.id}`;
+                    // Append the <div> to the userListContainer
+                    userListContainer.appendChild(userDiv);
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+
+</html>

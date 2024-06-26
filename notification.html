@@ -69,12 +69,23 @@
 
         <div class="profile">
             <img class="profile-img" src="Resources/MaleUser.png" alt="Not Found!">
-            <div class="profileName">
-                Hrishi
+            <div class="profileName" id="dynamic-username">
+                User<!-- Username will be dynamically inserted here -->
             </div>
         </div>
 
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const username = localStorage.getItem('username');
+            if (username) {
+                document.getElementById('username-display').textContent = username;
+                document.getElementById('dynamic-username').textContent = username;
+            }
+        });
+    </script>
+
 </body>
 <script src="Gerenal.js"></script>
 </html>

@@ -15,8 +15,9 @@
     <div class="title1">
         Trade It!
     </div>
+
     <!-- <div class="profile-name">
-        Welcome Hrishi
+        Welcome <span id="username-display">User</span>
     </div> -->
 
     <div class="nav-bar">
@@ -51,7 +52,7 @@
             <div class="section4">
                 <img src="Resources/Saved.png" alt="Not Found!">
                 <div class="logo-title4">
-                    SAVEDITEMS
+                    SAVED ITEMS
                 </div>
             </div>
         </a>
@@ -74,8 +75,8 @@
 
         <div class="profile">
             <img class="profile-img" src="Resources/MaleUser.png" alt="Not Found!">
-            <div class="profileName" id="dynamic-username">
-                User<!-- Username will be dynamically inserted here -->
+            <div class="profileName" id="profileName">
+                User
             </div>
         </div>
 
@@ -129,6 +130,14 @@
                 <div class="item-input1">
                     <input id="weight" name="weight" class="input1" type="text" placeholder="Enter the weight of the item" required>
                     <img src="Resources/Pencil.png" alt="Not Found!" class="bid-icon" />
+                </div>
+            </div>
+
+            <div class="end_bid">
+                End Date and Time
+                <div class="item-input1">
+                    <input id="endDateTime" name="end_bid" class="input1" type="datetime-local" placeholder="Enter the end date and time" required>
+                    <!-- <img src="Resources/Calendar.png" alt="Not Found!" class="calendar-icon" /> -->
                 </div>
             </div>
     
@@ -194,18 +203,34 @@
         </form>
     </div>
     
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const username = localStorage.getItem('username');
             if (username) {
-                document.getElementById('username-display').textContent = username;
-                document.getElementById('dynamic-username').textContent = username;
+                document.getElementById('profile-username').textContent = username;
             }
         });
+
+        // Function to display selected file name
+        function displayFileName(input, targetId) {
+            const fileInput = document.getElementById(input.id);
+            const fileName = fileInput.files[0].name;
+            document.getElementById(targetId).value = fileName;
+        }
     </script>
 
+    <!-- <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const username = localStorage.getItem('user_name');
+        if (username) {
+            document.getElementById('username-display').textContent = username;
+            document.getElementById('profileName').textContent = username;
+        }
+    });
+    </script> -->
+    <script src="Gerenal.js"></script>
+    <script src="Sell.js"></script>
 </body>
-<script src="Gerenal.js"></script>
-<script src="Sell.js"></script>
 
 </html>

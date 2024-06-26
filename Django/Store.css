@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.container{
+    position: relative;
+    left: 30%;
+    top: 3%;
+    display: flex;
+    /* Add this to align items horizontally */
+    flex-direction: row;
+    /* Add this to put some space between your containers */
+    gap: 20px;
+}
+
+
+#card-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    /* font-family: Roboto, Arial; */
+}
+.title2{
+    font-size: 2rem;
+    padding-bottom: 4px;
+    margin-top: 2px;
+    margin-left: 4px;
+}
+.card-preview{
+    /* background-color: aqua; */
+    /* width: 70%; */
+    border-radius: 8px;
+    height: 100%;
+    border: 1px solid #C1C1C1;
+    position: relative;
+    overflow: hidden;
+}
+
+.img1{
+    height: 250px;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.card-img{
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.info-title2{
+    font-size: 20px;
+}
+
+.info-preview{
+    display: grid;
+    grid-template-columns: 1fr 30%;
+}
+
+.info2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info3{
+    display: grid;
+    grid-template-columns: 1fr 50%;
+}
+
+
+
+.card{
+    display: inline-block;
+    /* padding: 20px; */
+    padding-top: 2px;
+    color: black;
+}
+  
+.timer {
+    display: flex;
+    justify-content: center;
+}
+  
+.time {
+    font-size: 15px;
+    margin-right: 2px;
+}
+
+.m1,
+.m2,
+.m3,
+.m4{
+    color: #C1C1C1;
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+.m1 > p,
+.m2 > p,
+.m3 > p,
+.m4 > p{
+    color: black;
+    padding-top: 2px;
+}
+
+.m3 > p{
+    margin-bottom: 6px;
+}
+
+.info-high{
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+.info-high > p{
+    margin-top: 3px;
+}
+
+.saved-item{
+    background-color: #00B7CC;
+    top: 6px;
+    left: 220px;
+    position: absolute;
+    border: 1px solid #0094FF;
+    border-radius: 5px;
+    z-index: 99;
+}
+
+/* #saved-item1{
+    background-color: #00B7CC;
+    top: 6px;
+    left: 240px;
+    position: absolute;
+    border: 1px solid #0094FF;
+    border-radius: 5px;
+} */
+
+/* Add this CSS to Store.css */
+
+.search-bar-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search-bar {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+#search-bar:focus {
+    border-color: #007BFF;
+}
+/* Add this CSS to Store.css */
+
+.search-bar-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #f1f1f1; Light background for contrast */
+    padding: 15px 0;
+}
+
+#search-bar {
+    width: 60%;
+    max-width: 500px;
+    font-size: 18px;
+    position: fixed;
+    left: 600px;
+    display: flexbox;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#search-bar:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
+
+/* Add this to ensure the search bar doesn't overflow on smaller screens */
+@media (max-width: 768px) {
+    #search-bar {
+        width: 80%;
+        font-size: 16px;
+    }
+}

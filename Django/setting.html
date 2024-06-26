@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/saved.css">
-    <link rel="stylesheet" href="Store.css">
+    <link rel="stylesheet" href="Styles/setting.css">
 </head>
 
 <body>
@@ -13,7 +12,7 @@
         Trade It!
     </div>
     <div class="profile-name">
-        Welcome Hrishi
+        Welcome <span id="username-display">User</span>
     </div>
 
     <div class="nav-bar">
@@ -45,12 +44,14 @@
                 </div>
             </div>
         </a>
-        <div class="section4">
-            <img class="saved-img" src="Resources/Saved.png" alt="Not Found!">
-            <div class="logo-title4">
-                SAVEDITEMS
+        <a href="saved.html">
+            <div class="section4">
+                <img src="Resources/Saved.png" alt="Not Found!">
+                <div class="logo-title4">
+                    SAVEDITEMS
+                </div>
             </div>
-        </div>
+        </a>
         <a href="notification.html">
             <div class="section5">
                 <img src="Resources/Notification.png" alt="Not Found!">
@@ -59,46 +60,35 @@
                 </div>
             </div>
         </a>
-        <a href="setting.html">
-            <div class="section6">
-                <img src="Resources/Settings.png" alt="Not Found!">
-                <div class="logo-title6">
-                    SETTINGS
-                </div>
+        <div class="section6">
+            <img class="set-img" src="Resources/Settings.png" alt="Not Found!">
+            <div class="logo-title6">
+                SETTINGS
             </div>
-        </a>
+        </div>
 
         <div class="profile">
             <img class="profile-img" src="Resources/MaleUser.png" alt="Not Found!">
-            <div class="profileName" id="dynamic-username">
-                User<!-- Username will be dynamically inserted here -->
+            <div class="profileName" id="profileName">
+                User
             </div>
         </div>
 
     </div>
 
-    <div class="container">
-        <div id="card-grid">No item is saved</div>
-    </div>
-
-    <div id="login">
-        <img class="logout-icon" src="Resources/Enter.png" alt="Not Found!"/>
-        <span class="log-text">SIGN IN</span>
-    </div>
-
+    <button id="logout">Logout</button>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const username = localStorage.getItem('username');
+            const username = localStorage.getItem('user_name');
             if (username) {
                 document.getElementById('username-display').textContent = username;
-                document.getElementById('dynamic-username').textContent = username;
+                document.getElementById('profileName').textContent = username;
             }
         });
     </script>
-
+    
 </body>
 <script src="Gerenal.js"></script>
-<script src="saved.js"></script>
-<script src="StoreTime.js"></script>
+<script src="logout.js"></script>
 </html>
