@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="test1.css">
+</head>
+<body>
+
+<div class="card-container">
+    <div class="slides">
+        <img src="Resources/rolex.webp" class="active">
+        <img src="Resources/rolex.jpg">
+        <img src="Resources/rolex.jpg">
+        <img src="Resources/rolex.jpg">
+        <img src="Resources/rolex.jpg">
+    </div>
+    <div class="button">
+        <span class="next">&#10095</span>
+        <span class="prev">&#10094</span>
+    </div>
+
+    <div class="dotsContainer">
+        <div class="dot active" attr="'0" onclick="switchImage(this)"></div>
+        <div class="dot" attr='1' onclick="switchImage(this)"></div>
+		<div class="dot" attr='2' onclick="switchImage(this)"></div>
+		<div class="dot" attr='3' onclick="switchImage(this)"></div>
+		<div class="dot" attr='4' onclick="switchImage(this)"></div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="test1.js"></script>
+
+</body>
+</html>

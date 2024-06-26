@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+
+<body>
+    <div class="back-ground"></div>
+    <p class="login-exist">Already have an account <span class="login-link">Log In</span></p>
+    <div class="title">Trade It!
+        <h2>Create Your Account</h2>
+    </div>
+    <form id="signup-form" class="signup-form" onsubmit="handleSignup()">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <!-- <span class="error-message"></span> -->
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <!-- <span class="error-message"></span> -->
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <!-- <span class="error-message"></span> -->
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <!-- <span class="error-message"></span> -->
+        </div>
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="agreeCheckbox" required>
+            <label for="agreeCheckbox">I agree to the terms and conditions</label>
+            <!-- <span class="error-message"></span> -->
+        </div>
+        <button type="submit" class="signup">Sign Up</button>
+        <div id="form-container">
+            <!-- Your form elements go here -->
+        </div>
+    </form>
+    <div class="image-container">
+        <div class="image1">
+        </div>
+        <div class="inner-image-container">
+            <div class="image2">
+            </div>
+            <div class="image3">
+            </div>
+        </div>
+        <div class="image4">
+        </div>
+        <div class="image5">
+        </div>
+    </div>
+</body>
+<script src="Gerenal.js"></script>
+<script src="auth.js"></script>
+
+</html>

@@ -1,6 +1,7 @@
+
 const product = [
     {
-        id: 1,
+        id: 0,
         image: 'Resources/rolex.webp',
         title: 'Rolex Oyster Daytona',
         title1: 'Information',
@@ -11,11 +12,12 @@ const product = [
         title2_value: '40mm',
         title3_value: '150gm',
         title4_value: '57 Years',
-        title6: 'Highest Bid'
+        title6: 'Highest Bid',
+        title7: '<span style="font-size: 20px;">₹</span>2000'
     },
 
     {
-        id: 2,
+        id: 1,
         image: 'Resources/Vacheron_&_Constantin_18ct_chronograph.png',
         title: 'Z Foldable Mobile',
         title1: 'Information',
@@ -30,7 +32,7 @@ const product = [
     },
 
     {
-        id: 3,
+        id: 2,
         image: 'Resources/Patek_Philippe_18ct_automatic.png',
         title: 'Z Foldable Mobile',
         title1: 'Information',
@@ -45,7 +47,7 @@ const product = [
     },
 
     {
-        id: 4,
+        id: 3,
         image: 'Resources/J_W_Benson_half_hunter_crown_wind.png',
         title: 'Z Foldable Mobile',
         title1: 'Information',
@@ -60,7 +62,7 @@ const product = [
     },
 
     {
-        id: 5,
+        id: 4,
         image: 'Resources/watch4.png',
         title: 'Z Foldable Mobile',
         title1: 'Information',
@@ -75,7 +77,7 @@ const product = [
     },
 
     {
-        id: 6,
+        id: 5,
         image: 'Resources/rolex.webp',
         title: 'Z Foldable Mobile',
         title1: 'Information',
@@ -90,7 +92,7 @@ const product = [
     },
 
     {
-        id: 7,
+        id: 6,
         image: 'Resources/rolex.webp',
         title: 'Rolex Oyster Daytona',
         title1: 'Information',
@@ -108,11 +110,14 @@ const product = [
     // ... rest of your products ...
 ];
 
+
 let cart = JSON.parse(localStorage.getItem('section4')) || [];
 
 let i = 0;
 document.getElementById('card-grid').innerHTML = product.map((item, index) => {
-    var { id, image, title, title1, title2, title2_value, title3, title3_value, title4, title4_value, title5, title6 } = item;
+
+    
+    var { id, image, title, title1, title2, title2_value, title3, title3_value, title4, title4_value, title5, title6, title7 } = item;
     return (
         `<div class="card-preview">
             <div class="card-img">
@@ -158,22 +163,43 @@ document.getElementById('card-grid').innerHTML = product.map((item, index) => {
             </div>
             <div class="info-high">
                 ${title6}
+                <p>${title7}</p>
             </div>
         </div>
         <button class="saved-item" onclick='addtocart(${index})'>Saved Item</button>
+        <button class="auction-item" onclick='goToAuctionPage(${index})'>Auction</button>
     </div>`
     )
 }).join('')
 
+// function addtocart(index) {
+//     var loggedUser = localStorage.getItem('refresh_token');
+//     if(loggedUser){
+//     cart.push(product[index]);
+//     localStorage.setItem('section4', JSON.stringify(cart));
+//     }else{
+//         alert("You're not logged in. Please login first!");
+//     }
+//     // document.getElementById("count").innerHTML = cart.length;
+// }
+
+
+
 function addtocart(index) {
     var loggedUser = localStorage.getItem('refresh_token');
-    if(loggedUser){
-    cart.push(product[index]);
-    localStorage.setItem('section4', JSON.stringify(cart));
-    }else{
+    if (loggedUser) {
+        cart.push(product[index]);
+        localStorage.setItem('section4', JSON.stringify(cart));
+    } else {
         alert("You're not logged in. Please login first!");
     }
     // document.getElementById("count").innerHTML = cart.length;
+}
+
+
+function goToAuctionPage(index) {
+    localStorage.setItem('selectedProduct', JSON.stringify(product[index]));
+    window.location.href = 'Store1.html';
 }
 
 // function delElement(index){

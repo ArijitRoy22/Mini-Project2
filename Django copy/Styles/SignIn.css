@@ -1,0 +1,210 @@
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #EBF8FF;
+    border-radius: 35px;
+}
+
+@font-face {
+    font-family: 'Iceberg';
+    src: url('../Fonts/Iceberg-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../Fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+.back-ground {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    opacity: 0.37;
+    overflow: hidden;
+    background: url(../Resources/Screenshot\ 2024-03-08\ 075302.png);
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.title {
+    position: absolute;
+    width: 135px;
+    height: 49px;
+    left: 30px;
+    top: 60px;
+    font-family: 'Iceberg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 45px;
+    opacity: 1;
+    color: #000000;
+}
+
+.title h2 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 347px;
+    height: 36px;
+    left: 132px;
+    top: 70px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #000000;
+}
+
+.login-exist{
+    /* display: block; */
+    position: absolute;
+    font-size: 14px;
+    left: 50vw;
+    top: 15vh;
+
+}
+
+.login-exist span{
+    color: #0038FF;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    color: #000000;
+    left: 171px;
+    /* background-color: aqua; */
+    top: 290px;
+}
+
+.sign-up-form input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 20px;
+}
+
+.email-label {
+    margin-bottom: 5px;
+}
+
+.email-icon{
+    position: absolute;
+    top: 14%;
+    right: 0%;
+}
+
+.password-label {
+    margin-bottom: 5px;
+}
+
+.password-container{
+    position: relative;
+}
+
+.lock-icon{
+    position: absolute;
+    top: 14%;
+    right: 0;
+}
+
+.signin{
+    position: absolute;
+    top: 500px;
+    left: 360px;
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    font-size: 12px;
+    color: #0038FF;
+}
+
+#problem{
+    position: absolute;
+    top: 540px;
+    left: 385px;
+    color: #0094FF;
+    font-size: 12px;
+}
+
+.image-container{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 100px;
+    right: 40px;
+}
+
+.image1{
+    width: 114px;
+    height: 103px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background: url(../Resources/rolex.webp);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.inner-image-container{
+    display: flex;
+    position: absolute;
+    top: 120px;
+    width: 100%;
+}
+.image2{
+    width: 91px;
+    height: 94px;
+    margin-right: 5px;
+    background: url(../Resources/Koh-i-Noor.jpg);
+    background-size: contain;
+
+}
+.image3{
+    flex-grow: 1;
+    height: 127px;
+    margin-right: 20px;
+    background: url(../Resources/Screenshot\ 2024-03-08\ 042009.png);
+    background-size: cover;
+}
+.image4{
+    position: absolute;
+    width: 69px;
+    height: 68px;
+    top: 225px;
+    left: 20px;
+    border-radius: 50px;
+    white-space: pre-line;
+    text-align: center;
+    background: url(../Resources/Rectangle\ 32.png);
+
+}
+.image5{
+    background: url(../Resources/Screenshot\ 2024-03-08\ 043118.png);
+    background-size: contain;
+    position: absolute;
+    width: 118px;
+    height: 173px;
+    top: 255px;
+    left: 95px;
+}
+
+#form-container{
+    position: absolute;
+    top: 80%;
+    left: 24%;
+}

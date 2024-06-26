@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/sell.css' %}">
+</head>
+<body>
+    <div class="back">
+        {% load static %}
+        <img class="back-icon" src="{% static 'Resources/Back.png' %}" alt="Not Found!"/>
+    </div>
+    <div class="nav">
+        <div class="title">
+            Trade It!
+        </div>
+        <div class="middle-section">
+            <a href="/">
+                <div class="logo1a">
+                    <div class="logo1"></div>
+                    <div class=logo-title1>
+                        HOME
+                    </div>
+                </div>
+            </a> 
+
+            <a href="/Store/">
+                <div class="logo2a">
+                    <div class="logo2"></div>
+                    <div class="logo-title2">
+                        STORE
+                    </div>
+                </div>
+            </a>
+            
+            <div class="logo3a">
+                <div class="logo3">
+                </div>
+                <div class="logo-title3">
+                    SELL ZONE
+                </div>
+            </div>
+            
+            <a href="/saved/">
+                <div class="logo4a">
+                    <div class="logo4">
+                    </div>
+                    <div class="logo-title4">
+                        SAVEDITEMS
+                    </div>
+                </div>
+            </a>
+
+            <a href="/notification/">
+                <div class="logo5a">
+                    <div class="logo5">
+                    </div>
+                    <div class="logo-title5">
+                        NOTIFICATIONS
+                    </div>
+                </div>
+            </a>
+            
+            <a href="/setting/">
+                <div class="logo6a">
+                    <div class="logo6">
+                    </div>
+                    <div class="logo-title6">
+                        SETTINGS
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="bottom-section">
+            <div class="profile">
+            </div>
+            <div class="profile-title">
+                Hrishi
+            </div>
+        </div>
+    </div>
+    <div class="add-items">
+        Add Items
+        <div class="name-item">
+            Name of the Item
+            <div class="item-input1">
+                <input class="input1" type="text" placeholder="Enter the name">
+                {% load static %}
+                <img src="{% static 'Resources/Pencil.png' %}" alt="Not Found!" class="name-icon"/>
+            </div>
+        </div>
+        
+        <div class="pic-item">
+            Picture of Item
+            <div class="item-input1">
+                <input class="input1" type="text" placeholder="Add .jpg/.png/.pdf files">
+                {% load static %}
+                <img src="{% static 'Resources/Plus Math.png' %}" alt="Not Found!" class="pic-icon"/>
+                <p class="upload-option">Add file</p>
+            </div>
+        </div>
+
+        <div class="item-info">
+            Item Information
+            <div class="item-input1">
+                <input class="input1" type="text" placeholder="Enter item information">
+                {% load static %}
+                <img src="{% static 'Resources/Pencil.png' %}" alt="Not Found!" class="info-icon"/>
+            </div>
+        </div>
+
+        <div class="start-bid">
+            Starting Bid
+            <div class="item-input1">
+                <input class="input1" type="text" placeholder="Enter the starting bid amount in INR">
+                {% load static %}
+                <img src="{% static 'Resources/Pencil.png' %}" alt="Not Found!" class="bid-icon"/>
+            </div>
+        </div>
+
+        <div class="button">
+            <button class="confirm-button">Confirm</button>
+            <p class="query">
+                Having any problems?
+            </p>
+        </div>
+    </div>
+
+</body>
+{% load static %}
+<script src="{% static 'Gerenal.js' %}"></script>
+</html>
